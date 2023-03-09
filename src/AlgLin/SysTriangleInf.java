@@ -17,7 +17,6 @@ public class SysTriangleInf extends SysLin {
     
     Vecteur r1 = null;
     
-    System.out.println("r1 (matrice correcte) : ");
     try {
       
       r1 = s1.resolution();
@@ -27,7 +26,6 @@ public class SysTriangleInf extends SysLin {
       e.printStackTrace();
     }
     
-    System.out.println("r2 (matrice erronée) : ");
     try {
       
       Vecteur r2 = s2.resolution();
@@ -53,10 +51,10 @@ public class SysTriangleInf extends SysLin {
     
     if(verif.normeLInfini() <= epsilon) {
       
-      System.out.println("La résolution est bonne");
+      System.out.println("La rÃ©solution est bonne");
     } else {
       
-      System.out.println("La résolution n'est pas bonne");
+      System.out.println("La rÃ©solution n'est pas bonne");
     }
   }
 
